@@ -1,9 +1,9 @@
 class User {
-    firstname: String ;
-    lastname:String ;
+    firstname: String;
+    lastname:String;
     age: number;
 
-    public constructor (firstname: string, lastname: string, age: number){
+    public constructor(firstname: string, lastname: string, age: number) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
@@ -12,7 +12,7 @@ class User {
 
 const myUser = new User("Mary", "HBB", 20);
 const myUser2 = new User("Mani", "HBB", 17);
-const myUser3= new User("JOJO", "JD", 40);
+const myUser3 = new User("JOJO", "JD", 40);
 
 console.log(myUser);
 console.log(myUser2);
