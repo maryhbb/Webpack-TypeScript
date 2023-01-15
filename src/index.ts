@@ -1,6 +1,6 @@
 class User {
-    firstname: String;
-    lastname:String;
+    firstname: string;
+    lastname: string;
     age: number;
 
     public constructor(firstname: string, lastname: string, age: number) {
