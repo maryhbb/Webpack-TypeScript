@@ -1,8 +1,8 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -13,10 +13,15 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [ '.ts' ],
+    extensions: [ '.ts' , '.js'],
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
+    clean: true
   },
+  plugins: [new HtmlWebpackPlugin({
+    title: "Mary's App",
+    template: 'src/index.html'
+  })]
 };
