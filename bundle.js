@@ -1,0 +1,1 @@
+(()=>{"use strict";var n=function(n,e,o){this.firstname=n,this.lastname=e,this.age=o},e=new n("Mary","HBB",20),o=new n("Mani","HBB",17),s=new n("JOJO","JD",40);console.log(e),console.log(o),console.log(s)})();
