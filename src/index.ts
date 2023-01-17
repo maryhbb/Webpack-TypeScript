@@ -1,3 +1,5 @@
+import "./styles.css";
+
 class User {
     firstname: string;
     lastname: string;
